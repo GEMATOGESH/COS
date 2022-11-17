@@ -22,7 +22,7 @@ def create_signal():
 	for i in range(N):
 		buf = 0
 		for j in range(50, 70):
-			buf += (-1)**(random.randint(0, 1)) * B2 * math.sin(2 * math.pi * i / N)
+			buf += (-1)**(random.randint(0, 1)) * B2 * math.sin(2 * math.pi * i * j / N)
 
 		x.append(B1 * math.sin(2 * math.pi * i / N) + buf)
 	return x
